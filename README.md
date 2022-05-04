@@ -6,7 +6,7 @@ https://rapidapi.com/schmidtfischer2/api/pagesjaunes1
 ### POST /search
 get our data with the search field and the place field that we got on the /placecode route. To have the following pages we will use the pagenb and the searchid field that we retrieved during our previous request. Please note that searchid expires after 30 min maximum
 
-#### First Request
+#### First Request JSON BODY
 ```
 {
     "search": "plombier",
@@ -16,7 +16,7 @@ get our data with the search field and the place field that we got on the /place
     }
 }
 ```
-#### Seconde Request 
+#### Seconde Request JSON BODY
 ```
 {
     "search": "plombier",
@@ -31,6 +31,8 @@ get our data with the search field and the place field that we got on the /place
 
 ### POST /place_code
 route to search adresse and to get place code of each adresse
+
+#### JSON BODY
 ```
 {
     "search": "ile de france"
